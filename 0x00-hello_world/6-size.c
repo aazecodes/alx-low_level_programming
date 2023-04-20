@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: prints "\print data type hash size"
+ * Description: prints "print data typesize"
  * Return: 0
  */
 int main(void)
