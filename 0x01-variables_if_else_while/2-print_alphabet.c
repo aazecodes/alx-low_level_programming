@@ -4,7 +4,7 @@
 *Description: prints alphabets in lower case
 *Return: no return
 */
-void main(void)
+int main(void)
 {
 	int letter;
 
@@ -13,4 +13,6 @@ void main(void)
 	putchar(letter);
 	}
 	putchar(10);
+	return (0);
+
 }
