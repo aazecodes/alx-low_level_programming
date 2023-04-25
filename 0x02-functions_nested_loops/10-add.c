@@ -1,11 +1,10 @@
-
 #include "main.h"
 /**
  * add - adds two integers and returnsthe result
  *
- * @x: number being added
+ * @d: number being added
  *
- * @y: number being added
+ * @j: number being added
  *
  * Return: Always 0.
  *
