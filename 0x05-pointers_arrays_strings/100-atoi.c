@@ -20,16 +20,15 @@ int _atoi(char *s)
 			|| s[i] == '\n' || s[i] == '+' || s[i] == '-')
 	{
 		if (s[i] == '-')
-			sign = (sign * (-1));
+			sign = sign * (-1);
 		i++;
 	}
 	while (s[i] >= '0' && s[i] <= '9')
 	{
-		int r = result * 10;
-		int q =  s[i] - '0';
-
-		result = r + q;
+		result = result * 10 + (s[i] - '0');
 		i++;
 	}
+	if (sign == (+1))
+		sign = 1;
 	return (sign * result);
 }
