@@ -11,10 +11,11 @@
 int main(void)
 {
 	int idx;
+	int i;
 	char charset[] = "abcdefghijklmnopqrstuvwxyABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	srand(time(NULL));
-	for (int i = 0; i < 100; i++)
+	for (i = 0; i < 100; i++)
 	{
 		idx = rand() % sizeof(charset) + 1;
 		_putchar(charset[idx]);
