@@ -1,4 +1,4 @@
-int _putchar(int c);
+int _putichar(int c);
 void _puts_recursion(char *s);
 void _print_rev_recursion(char *s);
 int _strlen_recursion(char *s);
@@ -9,3 +9,4 @@ int is_prime_number(int n);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int _sqrt(int n, int y);
+int prime(int n, int num);
