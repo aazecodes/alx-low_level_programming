@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int cents, coins = 0;
+	int cents, change = 0;
 	char e[] = "Error";
 
 	if (argc == 1 || argc > 2)
@@ -20,30 +20,18 @@ int main(int argc, char *argv[])
 
 	while (cents > 0)
 	{
-		switch (cents)
-		{
-			case 25:
-				cents -= 25;
-				break;
-			case 10:
-				cents -= 10;
-				break;
-			case 5:
-				cents -= 5;
-				break;
-			case 2:
-				cents -= 2;
-				break;
-			case 1:
-				cents -= 1;
-				break;
-			default:
-				printf("Invalid amount\n");
-				return (1);
-		}
-
-		coins += 1;
+		if (cents >= 25)
+			cents -= 25;
+		else if (cents >= 10)
+			cents -= 10;
+		else if (cents >= 5)
+			cents -= 5;
+		else if (cents >= 2)
+			cents -= 2;
+		else if (cents >= 1)
+			cents -= 1;
+		change += 1;
 	}
-	printf("%d\n", coins);
+	printf("%d\n", change);
 	return (0);
 }
