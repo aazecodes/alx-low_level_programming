@@ -64,16 +64,17 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf("Error\n");
+		_putchar("Error");
 		return (98);
 	}
 	num1 = argv[1], num2 = argv[2];
 	if (!positive_numb(num1) || !positive_numb(num2))
 	{
-		printf("Error\n");
+		_putchar("Error");
 		return (98);
 	}
 	result = multiply_strings(num1, num2);
-		printf("%lu\n", result);
+		_putchar("result");
+	_putchar('\n');
 	return (0);
 }
