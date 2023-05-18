@@ -4,4 +4,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 void *_calloc(unsigned int nmemb, unsigned int size);
 int *array_range(int min, int max);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
-
+int positive_numb(char *str);
+unsigned long int multiply_strings(char *str1, char *str2);
+int main(int argc, char *argv[]);
