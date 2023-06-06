@@ -2,7 +2,8 @@
 /**
  * print_listint - a function tha prints all the elements of a list.
  * @h: head of a list.
- * Return: numbers of nodes.
+ *
+ * Return: the numbers of nodes.
  */
 size_t print_listint(const listint_t *h)
 {
