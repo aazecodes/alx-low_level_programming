@@ -7,18 +7,20 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fptr, len, add;
+	int fptr, len = 0, add;
 
 	fptr = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
-
 	if (fptr == -1)
 		return (-1);
 
-	if (text_content == NULL)
+	if (filename == NULL)
+		return (-1);
+
+	if (text_content != NULL)
 	{
-		text_content = "";
+		while (text_content[len] != '\0')
+			len++;
 	}
-	for (len = 0; text_content[len] != '\0'; len++)
 	add = write(fptr, text_content, len);
 
 	if (add == -1)
